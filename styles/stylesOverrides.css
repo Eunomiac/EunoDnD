@@ -1,0 +1,127 @@
+.phb {
+    color: #000;
+    position: relative;
+    z-index: 15;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 279.4mm;
+    width: 215.9mm;
+    padding: 1cm 1.7cm;
+    padding-bottom: 1.5cm;
+    background-color: #EEE5CE;
+    background-image: url("https://www.gmbinder.com/assets/img/phb_bg.png");
+    font-family: BookSanity;
+    font-size: 0.317cm;
+    text-rendering: optimizeLegibility;
+    page-break-before: always;
+    page-break-after: always;
+    margin: 30px auto;
+    box-shadow: 1px 4px 14px #000;
+}
+
+.phb div.classOptions > h2 ~ section + div.column-break + section:before {
+    content: "";
+    display: block;
+    min-height: 35px;
+}
+.phb::after {
+    display: none;
+}
+
+.spacer {
+    display: block;
+}
+
+.phb div.classOptions {
+    column-count: 2;
+}
+.phb div.classOptions.spells {
+    column-count: 1;
+}
+
+.phb div.classOptions.spells table {
+    width: 90%;
+    margin: 10px auto;
+}
+
+
+.phb div.classOptions.spells table tr th {
+    display: inline-block;
+    padding: 5px 0;
+    width: calc(33% - 10px);
+    min-width: calc(33% - 10px);
+}
+
+.phb div.classOptions.spells table tr td {
+    display: inline-block;
+    font-style: italic;
+    padding-left: 10px;
+    width: calc(33% - 10px);
+    min-width: calc(33% - 10px);
+}
+
+.phb div.classOptions.spells table tr td.wide {
+    padding-left: 0;
+    min-width: unset;
+    width: 100%;
+    text-indent: 10px;
+}
+
+.phb h1 {
+    text-align: center;
+}
+
+.phb .validity {
+    background-color: var(--validityColorBG);
+    border-top: 2px solid var(--validityColor);
+    border-left: 2px solid var(--validityColor);
+    border-right: 2px solid var(--validityColor);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 2px solid var(--validityColor);
+    border-radius: 5px;
+    text-indent: 3px;
+}
+
+.phb .optionType::before {
+    display: "inline-block";
+    height: 21px; width: 21px;
+    margin: 2px 10px -2px -30px;
+    padding: 0;
+}
+
+.phb .optionType.addition::before { content: "A" }
+.phb .optionType.replacement::before { content: "R" }
+
+
+.phb .validity.always {
+    --validityColorBG: rgba(0, 255, 0, 0.2);
+    --validityColor: lime;
+}
+
+.phb .validity.always::before {
+    content: "✅";
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+    margin: 0;
+    padding: 0;
+    margin-left: -30px;
+    margin-right: 5px;
+
+}
+
+.phb .validity.discretion {
+    --validityColorBG: rgba(255, 255, 0, 0.2);
+    --validityColor: yellow;
+}
+
+.phb .validity.uncertain {
+    --validityColorBG: rgba(255, 0, 255, 0.2);
+    --validityColor: magenta;
+}
+
+.phb .validity.never {
+    --validityColorBG: rgba(255, 0, 0, 0.2);
+    --validityColor: red;
+}
