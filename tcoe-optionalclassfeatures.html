@@ -4,19 +4,45 @@
 <head>
     <title>Tasha's Cauldron of Everything: Optional Class Features</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico" sizes="16x16"/>
-    <link rel="stylesheet" type="text/css" href="stylesFonts.css">
-    <link rel="stylesheet" type="text/css" href="stylesOriginal.css">
-    <link rel="stylesheet" type="text/css" href="stylesOverrides.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesFonts.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesOriginal.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesOverrides.css">
 </head>
 
 <body>
     <div>
-        <div class="phb">
+        <div class="phb halfcol">
             <h1>Tasha's Optional Class Features</h1>
-            <div class="classOptions" id="barbarian" style="margin-top: 25px;">
+            <h3>Legend</h3>
+            <div class="legend">
+                <div class="classOptions">
+                    <section>
+                        <h3 class="optionType new">New Feature</h3>
+                        <p>New additions to a class, without a trade-off.</p>
+                        <h3 class="optionType expansion">Expanded Options</h3>
+                        <p>Expanded options for existing abilities.</p>
+                        <h3 class="optionType retraining">Versatile Retraining</h3>
+                        <p>Option to retrain previously-chosen class features.</p>
+                        <h3 class="optionType replacement">Replacement Feature</h3>
+                        <p>Explicit replacements of existing class features.</p>
+                    </section>
+                    <div class="column-break"></div>
+                    <section>
+                        <h3 class="validity always">Always Allowed</h3>
+                        <p>These features don't require DM approval.</p>
+                        <h3 class="validity discretion">Discretionary</h3>
+                        <p>These features <b>do</b> require DM approval.</p>
+                        <h3 class="validity never">Never Allowed</h3>
+                        <p>These features are banned.</p>
+                        <h3 class="validity uncertain">Jury's Still Out</h3>
+                        <p>These features are still awaiting judgment.</p>
+                    </section>
+                </div>
+            </div>
+            <div class="classOptions" id="barbarian">
                 <h2>Barbarian</h2>
                 <section id="tashas-optional-class-features-barbarian-primal-knowledge">
-                    <h3 class="validity always">Primal Knowledge</h3>
+                    <h3 class="validity always optionType new">Primal Knowledge</h3>
                     <p><em>3rd-level barbarian feature</em></p>
                     <p>When you reach 3rd level and again at 10th level, you gain
                         proficiency in one skill of your choice from the list of
@@ -24,16 +50,16 @@
                 </section>
                 <div class="column-break"></div>
                 <section id="tashas-optional-class-features-barbarian-instinctive-pounce">
-                    <h3 class="validity always">Instinctive Pounce</h3>
+                    <h3 class="validity always optionType new">Instinctive Pounce</h3>
                     <p><em>7th-level barbarian feature</em></p>
                     <p>As a part of the bonus action you take to enter your rage,
                         you can move up to half your speed.</p>
                 </section>
             </div>
-            <div class="classOptions spells" id="bardSpells" style="margin-top: 80px;">
+            <div class="classOptions spells" id="bardSpells">
                 <h2>Bard</h2>
                 <section id="tashas-optional-class-features-bard-additional-bard-spells">
-                    <h3 class="validity always">Additional Bard Spells</h3>
+                    <h3 class="validity always optionType expansion">Additional Bard Spells</h3>
                     <p>The spells in the following list expand the bard’s spell list
                         in the <em>Player’s Handbook</em>. The list is organized by
                         spell level, not character level. If a spell can be cast as a
@@ -47,7 +73,7 @@
             </div>
             <div class="classOptions" id="bard">
                 <section id="tashas-optional-class-features-bard-magical-inspiration">
-                    <h3 class="validity never">Magical Inspiration</h3>
+                    <h3 class="validity never optionType new">Magical Inspiration</h3>
                     <p><em>2nd-level bard feature</em></p>
                     <p>If a creature has a Bardic Inspiration die from you and casts
                         a spell that restores hit points or deals damage, the creature
@@ -57,7 +83,7 @@
                 </section>
                 <div class="column-break"></div>
                 <section id="tashas-optional-class-features-bard-bardic-versatility">
-                    <h3 class="validity always">Bardic Versatility</h3>
+                    <h3 class="validity always optionType retraining">Bardic Versatility</h3>
                     <p><em>4th-level bard feature</em></p>
                     <p>Whenever you reach a level in this class that grants the
                         Ability Score Improvement feature, you can do one of the
@@ -74,18 +100,18 @@
                 </section>
             </div>
         </div>
-        <div class="phb">
+        <div class="phb halfcol">
             <div class="classOptions spells" id="clericSpells">
                 <h2>Cleric</h2>
                 <section id="tashas-optional-class-features-cleric-additional-cleric-spells">
-                    <h3 class="validity always">Additional Cleric Spells</h3>
+                    <h3 class="validity always optionType expansion">Additional Cleric Spells</h3>
                     <p><em>1st-level cleric feature</em></p>
                         <table><tr><th>1st Level</th><th>2nd Level</th><th>3rd Level</th></tr><tr><td></td><td></td><td>Aura of vitality<br>Spirit shroud*</td></tr><tr><th>4th Level</th><th>5th Level</th><th>6th Level</th></tr><tr><td>Aura of life<br>Aura of purity</td><td>Summon celestial*</td><td>Sunbeam</td></tr><tr><th>7th Level</th><th>8th Level</th><th>9th Level</th></tr><tr><td></td><td>Sunburst</td><td>Power word heal</td></tr></table>
                 </section>
             </div>
             <div class="classOptions" id="cleric">
                 <section id="tashas-optional-class-features-cleric-harvest-divine-power">
-                    <h3 class="validity always">Harvest Divine Power</h3>
+                    <h3 class="validity always optionType new">Harvest Divine Power</h3>
                     <p><em>2nd-level cleric feature</em></p>
                     <p>You can expend a use of your Channel Divinity to fuel your
                         spells. As a bonus action, you touch your holy symbol, utter a
@@ -99,7 +125,7 @@
                 </section>
                 <div class="column-break"></div>
                 <section id="tashas-optional-class-features-cleric-cantrip-versatility">
-                    <h3 class="validity always">Cantrip Versatility</h3>
+                    <h3 class="validity always optionType retraining">Cantrip Versatility</h3>
                     <p><em>4th-level cleric feature</em></p>
                     <p>Whenever you reach a level in this class that grants the Ability
                         Score Improvement feature, you can replace one cantrip you learned
@@ -107,7 +133,7 @@
                         the cleric spell list.</p>
                 </section>
                 <section id="tashas-optional-class-features-cleric-blessed-strikes">
-                    <h3>Blessed Strikes</h3>
+                    <h3 class="validity uncertain optionType replacement">Blessed Strikes</h3>
                     <p><em>8th-level cleric feature, which replaces the Divine Strike or
                             Potent Spellcasting feature</em></p>
                     <p>You are blessed with divine might in battle. When a creature
@@ -121,14 +147,14 @@
             <div class="classOptions spells" id="druidSpells" style="margin-top: -20px;">
                 <h2>Druid</h2>
                 <section id="tashas-optional-class-features-druid-additional-druid-spells">
-                    <h3 class="validity always">Additional Druid Spells</h3>
+                    <h3 class="validity always optionType expansion">Additional Druid Spells</h3>
                     <p><em>1st-level druid feature</em></p>
                         <table><tr><th>1st Level</th><th>2nd Level</th><th>3rd Level</th></tr><tr><td>Protection from evil and good</td><td>Augury (ritual)<br>Continual flame<br>Enlarge/reduce<br>Summon beast*</td><td>Aura of vitality<br>Elemental weapon<br>Revivify<br>Summon fey*</td></tr><tr><th>4th Level</th><th>5th Level</th><th>6th Level</th></tr><tr><td>Divination (ritual)<br>Fire shield<br>Summon elemental*</td><td>Cone of cold</td><td>Flesh to stone</td></tr><tr><th>7th Level</th><th>8th Level</th><th>9th Level</th></tr><tr><td>Symbol</td><td>Incendiary cloud</td><td></td></tr></table>
                 </section>
             </div>
             <div class="classOptions" id="druid">
                 <section id="tashas-optional-class-features-druid-wild-companion">
-                    <h3>Wild Companion</h3>
+                    <h3 class="validity uncertain optionType new">Wild Companion</h3>
                     <p><em>2nd-level druid feature</em></p>
                     <p>You gain the ability to summon a spirit that assumes an animal
                         form; as an action, you can expend a use of your Wild Shape
@@ -141,7 +167,7 @@
                 </section>
                 <div class="column-break"></div>
                 <section id="tashas-optional-class-features-druid-cantrip-versatility">
-                    <h3 class="validity always">Cantrip Versatility</h3>
+                    <h3 class="validity always optionType retraining">Cantrip Versatility</h3>
                     <p><em>4th-level druid feature</em></p>
                     <p>Whenever you reach a level in this class that grants the Ability
                         Score Improvement feature, you can replace one cantrip you learned
@@ -150,11 +176,11 @@
                 </section>
             </div>
         </div>
-        <div class="phb">
+        <div class="phb halfcol">
             <div class="classOptions" id="fighter">
                 <h2>Fighter</h2>
                 <section id="tashas-optional-class-features-fighter-fighting-style-options">
-                    <h3>Fighting Style Options</h3>
+                    <h3 class="validity always optionType expansion">Fighting Style Options</h3>
                     <p><em>1st-level fighter feature</em></p>
                     <p>When you choose a fighting style, the following styles are added
                         to your list of options.</p>
@@ -202,7 +228,7 @@
                         grappled by you.</p>
                 </section>
                 <section id="tashas-optional-class-features-fighter-martial-versatility">
-                    <h3 class="validity always">Martial Versatility</h3>
+                    <h3 class="validity always optionType retraining">Martial Versatility</h3>
                     <p><em>4th-level fighter feature</em></p>
                     <p>Whenever you reach a level in this class that grants the Ability
                         Score Improvement feature, you can do one of the following, as you
@@ -216,7 +242,7 @@
                 </section>
                 <div class="column-break"></div>
                 <section id="tashas-optional-class-features-maneuver-options">
-                    <h3>Maneuver Options</h3>
+                    <h3 class="validity always optionType expansion">Maneuver Options</h3>
                     <p>If you have access to maneuvers, the following maneuvers are
                         added to the list of options available to you. Maneuvers are
                         available to Battle Masters but also to characters who have a
@@ -272,11 +298,11 @@
                 </section>
             </div>
         </div>
-        <div class="phb">            
+        <div class="phb halfcol">            
             <div class="classOptions" id="monk">
                 <h2>Monk</h2>
                 <section id="tashas-optional-class-features-monk-dedicated-weapon">
-                    <h3>Dedicated Weapon</h3>
+                    <h3 class="validity always optionType new">Dedicated Weapon</h3>
                     <p><em>2nd-level monk feature</em></p>
                     <p>You train yourself to use a variety of weapons as monk weapons,
                         not just simple melee weapons and shortswords. Whenever you finish
@@ -292,7 +318,7 @@
                     </ul>
                 </section>
                 <section id="tashas-optional-class-features-monk-ki-fueled-attack">
-                    <h3>Ki-Fueled Attack</h3>
+                    <h3 class="validity always optionType new">Ki-Fueled Attack</h3>
                     <p><em>3rd-level monk feature</em></p>
                     <p>If you spend 1 ki point or more as part of your action on your
                         turn, you can make one attack with an unarmed strike or a monk
@@ -300,14 +326,14 @@
                 </section>
                 <div class="column-break"></div>
                 <section id="tashas-optional-class-features-monk-quickened-healing">
-                    <h3>Quickened Healing</h3>
+                    <h3 class="validity always optionType new">Quickened Healing</h3>
                     <p><em>4th-level monk feature</em></p>
                     <p>As an action, you can spend 2 ki points and roll a Martial Arts
                         die. You regain a number of hit points equal to the number rolled
                         plus your proficiency bonus.</p>
                 </section>
                 <section id="tashas-optional-class-features-monk-focused-aim">
-                    <h3>Focused Aim</h3>
+                    <h3 class="validity always optionType new">Focused Aim</h3>
                     <p><em>5th-level monk feature</em></p>
                     <p>When you miss with an attack roll, you can spend 1 to 3 ki points
                         to increase your attack roll by 2 for each of these ki points you
@@ -317,14 +343,14 @@
             <div class="classOptions spells" id="paladinSpells">
                 <h2>Paladin</h2>
                 <section id="tashas-optional-class-features-paladin-additional-paladin-spells">
-                    <h3 class="validity always">Additional Paladin Spells</h3>
+                    <h3 class="validity always optionType expansion">Additional Paladin Spells</h3>
                     <p><em>2nd-level paladin feature</em></p>
                     <table><tr><th>1st Level</th><th>2nd Level</th><th>3rd Level</th></tr><tr><td></td><td>Gentle repose<br>Prayer of healing<br>Warding bond</td><td>Spirit shroud*</td></tr><tr><th>4th Level</th><th>5th Level</th></tr><tr><td></td><td>Summon celestial*</td></tr></table>
                 </section>
             </div>
             <div class="classOptions" id="paladin">
                 <section id="tashas-optional-class-features-paladin-fighting-style-options">
-                    <h3>Fighting Style Options</h3>
+                    <h3 class="validity always optionType expansion">Fighting Style Options</h3>
                     <p><em>2nd-level paladin feature</em></p>
                     <p>When you choose a fighting style, the following styles are added
                         to your list of options.</p>
@@ -352,7 +378,7 @@
                 </section>
                 <div class="column-break"></div>
                 <section id="tashas-optional-class-features-paladin-harness-divine-power">
-                    <h3>Harness Divine Power</h3>
+                    <h3 class="validity always optionType new">Harness Divine Power</h3>
                     <p><em>3rd-level paladin feature</em></p>
                     <p>You can expend a use of your Channel Divinity to fuel your
                         spells. As a bonus action, you touch your holy symbol, utter a
@@ -365,7 +391,7 @@
                         thrice. You regain all expended uses when you finish a long rest.</p>
                 </section>
                 <section id="tashas-optional-class-features-paladin-martial-versatility">
-                    <h3 class="validity always">Martial Versatility</h3>
+                    <h3 class="validity always optionType retraining">Martial Versatility</h3>
                     <p><em>4th-level paladin feature</em></p>
                     <p>Whenever you reach a level in this class that grants the Ability
                         Score Improvement feature, you can replace a fighting style you
@@ -374,18 +400,18 @@
                 </section>
             </div>
         </div>
-        <div class="phb">
+        <div class="phb halfcol">
             <div class="classOptions spells" id="rangerSpells">
                 <h2>Ranger</h2>
                 <section id="tashas-optional-class-features-ranger-additional-ranger-spells">
-                    <h3 class="validity always">Additional Ranger Spells</h3>
+                    <h3 class="validity always optionType expansion">Additional Ranger Spells</h3>
                     <p><em>2nd-level ranger feature</em></p>
                     <table><tr><th>1st Level</th><th>2nd Level</th><th>3rd Level</th></tr><tr><td>Entangle<br>Searing Smite</td><td>Aid<br>Enhance ability<br>Gust of wind<br>Magic weapon<br>Summon beast*</td><td>Elemental weapon<br>Meld into stone<br>Revivify<br>Summon fey*</td></tr><tr><th>4th Level</th><th>5th Level</th><td style="background-color: transparent;"></td></tr><tr><td>Dominate beast<br>Summon elemental*</td><td>Greater restoration</td><td></td></tr></table>
                 </section>
             </div>
             <div class="classOptions" id="ranger">
                 <section id="tashas-optional-class-features-ranger-deft-explorer">
-                    <h3>Deft Explorer</h3>
+                    <h3 class="validity always optionType replacement">Deft Explorer</h3>
                     <p><em>1st-level ranger feature, which replaces the Natural Explorer
                             feature</em></p>
                     <p>You are an unsurpassed explorer and survivor, both in the
@@ -414,7 +440,7 @@
                         1.</p>
                 </section>
                 <section id="tashas-optional-class-features-ranger-favored-foe">
-                    <h3>Favored Foe</h3>
+                    <h3 class="validity always optionType replacement">Favored Foe</h3>
                     <p><em>1st-level ranger feature, which replaces the Favored Enemy
                             feature and works with the Foe Slayer feature</em></p>
                     <p>When you hit a creature with an attack roll, you can call on your
@@ -433,7 +459,7 @@
                 </section>
                 <div class="column-break"></div>
                 <section id="tashas-optional-class-features-ranger-fighting-style-options">
-                    <h3>Fighting Style Options</h3>
+                    <h3 class="validity always optionType expansion">Fighting Style Options</h3>
                     <p><em>2nd-level ranger feature</em></p>
                     <p>When you choose a fighting style, the following styles are added
                         to your list of options.</p>
@@ -459,7 +485,7 @@
                         weapon, you gain a +2 bonus to the damage roll.</p>
                 </section>
                 <section id="tashas-optional-class-features-ranger-spellcasting-focus">
-                    <h3>Spellcasting Focus</h3>
+                    <h3 class="validity always optionType new">Spellcasting Focus</h3>
                     <p><em>2nd-level ranger feature</em></p>
                     <p>You can use a druidic focus as a spellcasting focus for your
                         ranger spells. A druidic focus might be a sprig of mistletoe or
@@ -469,10 +495,10 @@
                 </section>
             </div>
         </div>
-        <div class="phb">
+        <div class="phb halfcol">
             <div class="classOptions" id="rangerB">
                 <section id="tashas-optional-class-features-ranger-primal-awareness">
-                    <h3>Primal Awareness</h3>
+                    <h3 class="validity always optionType replacement">Primal Awareness</h3>
                     <p><em>3rd-level ranger feature, which replaces the Primeval Awareness
                             feature</em></p>
                     <p>You can focus your awareness through the interconnections of
@@ -516,7 +542,7 @@
                 </section>
                 <div class="column-break"></div>
                 <section id="tashas-optional-class-features-ranger-martial-versatility">
-                    <h3 class="validity always">Martial Versatility</h3>
+                    <h3 class="validity always optionType retraining">Martial Versatility</h3>
                     <p><em>4th-level ranger feature</em></p>
                     <p>Whenever you reach a level in this class that grants the Ability
                         Score Improvement feature, you can replace a fighting style you know
@@ -524,7 +550,7 @@
                         represents a shift of focus in your martial practice.</p>
                 </section>
                 <section id="tashas-optional-class-features-ranger-natures-veil">
-                    <h3>Nature’s Veil</h3>
+                    <h3 class="validity always optionType replacement">Nature’s Veil</h3>
                     <p><em>10th-level ranger feature, which replaces the Hide in Plain
                             Sight feature</em></p>
                     <p>You draw on the powers of nature to hide yourself from view
@@ -540,7 +566,7 @@
             <div class="classOptions" id="rogue" style="margin-top: 50px;">
                 <h2>Rogue</h2>
                 <section id="tashas-optional-class-features-rogue-steady-aim">
-                    <h3>Steady Aim</h3>
+                    <h3 class="validity uncertain optionType new">Steady Aim</h3>
                     <p><em>3rd-level rogue feature</em></p>
                     <p>As a bonus action, you give yourself advantage on your next
                         attack roll on the current turn. You can use this bonus action
@@ -551,11 +577,11 @@
                 <section><div class="spacer" style="min-height: 100px;"></div></section>
             </div>
         </div>
-        <div class="phb">
+        <div class="phb halfcol">
             <div class="classOptions spells" id="sorcererSpells">
                 <h2>Sorcerer</h2>
                 <section id="tashas-optional-class-features-sorcerer-additional-sorcerer-spells">
-                    <h3 class="validity always">Additional Sorcerer Spells</h3>
+                    <h3 class="validity always optionType expansion">Additional Sorcerer Spells</h3>
                     <p><em>1st-level sorcerer feature</em></p>
                     <table>
                         <tr><th class="wide">Cantrips</th></tr>
@@ -565,7 +591,7 @@
             </div>
             <div class="classOptions" id="sorcerer">
                 <section id="tashas-optional-class-features-sorcerer-metamagic-options">
-                    <h3>Metamagic Options</h3>
+                    <h3 class="validity always optionType expansion">Metamagic Options</h3>
                     <p><em>3rd-level sorcerer feature</em></p>
                     <p>When you choose Metamagic options, you have access to the
                         following additional options.</p>
@@ -584,7 +610,7 @@
                 </section>
                 <div class="column-break"></div>
                 <section id="tashas-optional-class-features-sorcerer-sorcerous-versatility">
-                    <h3 class="validity always">Sorcerous Versatility</h3>
+                    <h3 class="validity always optionType retraining">Sorcerous Versatility</h3>
                     <p><em>4th-level sorcerer feature</em></p>
                     <p>Whenever you reach a level in this class that grants the Ability
                         Score Improvement feature, you can do one of the following,
@@ -597,7 +623,7 @@
                     </ul>
                 </section>
                 <section id="tashas-optional-class-features-sorcerer-magical-guidance">
-                    <h3>Magical Guidance</h3>
+                    <h3 class="validity uncertain optionType new">Magical Guidance</h3>
                     <p><em>5th-level sorcerer feature</em></p>
                     <p>You can tap into your inner wellspring of magic to try to conjure
                         success from failure. When you make an ability check that fails,
@@ -606,11 +632,11 @@
                 </section>
             </div>
         </div>
-        <div class="phb">
+        <div class="phb halfcol">
             <div class="classOptions spells" id="warlockSpells">
                 <h2>Warlock</h2>
                 <section id="tashas-optional-class-features-warlock-additional-warlock-spells">
-                    <h3 class="validity always">Additional Warlock Spells</h3>
+                    <h3 class="validity always optionType expansion">Additional Warlock Spells</h3>
                     <p><em>1st-level warlock feature</em></p>
                     <table>
                         <tr><th class="wide">Cantrips</th></tr>
@@ -620,7 +646,7 @@
             </div>
             <div class="classOptions" id="warlock">
                 <section id="tashas-optional-class-features-warlock-pact-boon-option">
-                    <h3>Pact Boon Option</h3>
+                    <h3 class="validity always optionType new">Pact Boon Option</h3>
                     <p><em>3rd-level warlock feature</em></p>
                     <p>When you choose your Pact Boon feature, the following option is
                         available to you.</p>
@@ -639,7 +665,7 @@
                         previous amulet. The talisman turns to ash when you die.</p>
                 </section>
                 <section id="tashas-optional-class-features-warlock-eldritch-versatility">
-                    <h3 class="validity always">Eldritch Versatility</h3>
+                    <h3 class="validity always optionType retraining">Eldritch Versatility</h3>
                     <p><em>4th-level warlock feature</em></p>
                     <p>Whenever you reach a level in this class that grants the Ability
                         Score Improvement feature, you can do one of the following:</p>
@@ -659,7 +685,7 @@
                 </section>
                 <div class="column-break"></div>
                 <section id="tashas-optional-class-features-eldritch-invocation-options">
-                    <h3>Eldritch Invocation Options</h3>
+                    <h3 class="validity always optionType expansion">Eldritch Invocation Options</h3>
                     <p>When you choose eldritch invocations, you have access to these
                         additional options.</p>
                     <section id="tashas-optional-class-features-eldritch-invocation-options-bond-of-the-talisman">
@@ -701,7 +727,7 @@
                 </section>
             </div>
         </div>
-        <div class="phb">
+        <div class="phb halfcol">
             <div class="classOptions" id="warlockB">
                 <section id="tashas-optional-class-features-eldritch-invocation-options-gift-of-the-protectors">
                     <h4>Gift of the Protectors</h4>
@@ -770,7 +796,7 @@
             <div class="classOptions spells" id="wizardSpells" style="margin-top: 30px;">
                 <h2>Wizard</h2>
                 <section id="tashas-optional-class-features-wizard-additional-wizard-spells">
-                    <h3 class="validity always">Additional Wizard Spells</h3>
+                    <h3 class="validity always optionType expansion">Additional Wizard Spells</h3>
                     <p><em>1st-level wizard feature</em></p>
                     <table>
                         <tr><th class="wide">Cantrips</th></tr>
@@ -780,7 +806,7 @@
             </div>
             <div class="classOptions" id="wizard">
                 <section id="tashas-optional-class-features-wizard-cantrip-formulas">
-                    <h3>Cantrip Formulas</h3>
+                    <h3 class="validity always optionType retraining">Cantrip Formulas</h3>
                     <p><em>3rd-level wizard feature</em></p>
                     <p>You have scribed a set of arcane formulas in your spellbook that
                         you can use to formulate a cantrip in your mind. Whenever you
