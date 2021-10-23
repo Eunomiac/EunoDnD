@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formatting Text for Pathfinder: Foundry VTT</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesCustom.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/fuzzyset.js"></script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script src="scripts/foundryFormatter.jsm"></script>
+  </head>
+  <body class="foundry-formatter">
+    <div id="container">
+      <div id="text-input">
+        <h3 id="code-input-prompt">Paste and edit raw ability effect text below, then click... &nbsp;&nbsp;&nbsp;&nbsp;<button id="submit">PARSE&excl;</button></h3>
+        <textarea id="rawinput"></textarea>
+        
+      </div>
+      <div id="sample-output"><p>&nbsp;</p></div>
+      <h3 id="code-output-prompt">Check that it looks good, then copy the following code and paste it into the raw markup tab of any text input field in Foundry!</h3>
+      <pre id="code-output"></pre>
+    </div>
+  </body>
+</html>

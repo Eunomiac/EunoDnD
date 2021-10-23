@@ -1,0 +1,26 @@
+{
+  "name": "eunodnd",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/Eunomiac/EunoDnD/edit/main/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "esmodules": [
+    "./scripts/foundryFormatter.jsm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eunomiac/EunoDnD.git"
+  },
+  "author": "Eunomiac",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eunomiac/EunoDnD/issues"
+  },
+  "homepage": "https://github.com/Eunomiac/EunoDnD#readme",
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "g-sheets-api": "^2.1.2"
+  }
+}

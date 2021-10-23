@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  background-color: lightgray;
+}
+
+h3 { 
+  display: block;
+  text-align: left;
+  max-height: 20px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald";
+  margin-bottom: 5px;
+}
+
+div#container {
+  display: grid;
+  height: calc(100vh - 50px);
+  width: calc(100vh - 50px);
+  grid-template-columns: auto 300px;
+  grid-template-rows: 75% 30px auto;
+  padding: 0;
+  margin: 25px;
+}
+
+body.foundry-formatter #container > * {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+body.foundry-formatter #container #text-input { 
+  grid-column: 1;
+  grid-row: 1;
+}
+
+body.foundry-formatter #container #rawinput,
+body.foundry-formatter #container #code-output {
+  height: calc(100% - 22px - 25px - 6px);
+  width: calc(100% - 6px);
+  font-size: 10px;
+  font-family: "Fira Code", monospace;
+  outline: 3px outset gray;
+  background-color: white;
+  font-weight: bold;
+  resize: none;
+}
+
+body.foundry-formatter #container #text-input button#submit {
+  height: 25px;
+  width: 75px;
+  border-radius: 12.5px;
+  background-color: rgba(0, 255, 0, 0.2);
+  line-height: 10px;
+  font-size: 21px;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -10px;
+  font-weight: 900;
+}
+
+body.foundry-formatter #container #sample-output {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 10px;
+  padding: 5px;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Signika", sans-serif;
+  overflow: hidden;
+  background-image: url("../images/backgrounds/parchment.jpg");
+  max-width: 300px;
+  width: 300px;
+  margin-top: -20px;
+  opacity: 0.25;
+}
+
+body.foundry-formatter #container #code-output-prompt {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  opacity: 0;
+}
+
+body.foundry-formatter #container #code-output {
+  height: 100%;
+  width: 100%;
+  grid-column: 1 / 3;
+  grid-row: 3;
+  white-space: pre-line;
+  word-wrap: break-word;
+  overflow: scroll;
+  outline: 3px inset gray;
+  background-color: #666666;
+  font-weight: bold;
+  margin-top: -5px;
+  opacity: 0;
+  pointer-events: none;
+}
