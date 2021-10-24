@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "esmodules": [
-    "./scripts/foundryFormatter.jsm"
+    "./scripts/foundryFormatter.mjs"
   ],
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "devDependencies": {
     "eslint": "^8.0.1",
     "g-sheets-api": "^2.1.2"
+  },
+  "dependencies": {
+    "hyphenopoly": "^5.0.0-beta.1"
   }
 }

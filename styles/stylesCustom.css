@@ -78,6 +78,11 @@ body.foundry-formatter #container #sample-output {
   width: 300px;
   margin-top: -20px;
   opacity: 0.25;
+  hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  }
 }
 
 body.foundry-formatter #container #code-output-prompt {
